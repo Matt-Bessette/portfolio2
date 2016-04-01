@@ -1,0 +1,29 @@
+$high-res-mobile: 3.0;
+$med-res-mobile: 2.0;
+$norm-res-mobile: 1.0;
+
+$background-color:white;
+
+body {
+
+	div.above {
+
+		width:100%;
+		height:30%;
+
+		@import 'nav';
+		background-image: url('/img/northern-lights-1149130_1920.jpg');
+	}
+
+	div.below {
+
+		margin-top: 15px;
+
+		$title-size: 1.8em;
+
+		background-color: $background-color;
+
+		@import 'projects';
+	}
+	
+}

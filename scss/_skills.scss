@@ -2,8 +2,21 @@ div.skills {
 
 	display: block;
 
-	span {
+	text-align: center;
 
+	span.title {
+		display: block;
+		text-align: center;
+		font-size: $title-size;
+	}
+
+	span {
+		display: block;
+		
 		margin-bottom:15px;
+	}
+
+	span:nth-child(even) {
+		margin-bottom:0;
 	}
 }

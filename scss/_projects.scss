@@ -5,4 +5,48 @@ div.projects {
 		text-align: center;
 		font-size: $title-size;
 	}
+
+	div.project {
+
+		text-align: center;
+
+		span.title {
+
+			font-size: $title-size - .4em;
+
+			display: block;
+		}
+
+		span.date {
+
+			display: block;
+		}
+
+		span.left {
+
+			vertical-align: top;
+
+			display: inline-block;
+
+			height: 100%;
+
+			img {
+
+				
+			}
+		}
+
+		span.right {
+
+			margin-top:20px;
+
+			text-align: justify;
+
+			width:35%;
+
+			display: inline-block;
+		}
+
+	}
+
 }

@@ -1,10 +1,11 @@
-div.skills {
+div.aboutme {
 
 	display: inline-block;
 
 	text-align: center;
+	width:35%;
 
-	width:25%;
+	vertical-align: top;
 
 	span.title {
 		display: block;
@@ -12,13 +13,9 @@ div.skills {
 		font-size: $title-size;
 	}
 
-	span {
-		display: block;
+	span.other {
 		
-		margin-bottom:15px;
+		text-align: justify;
 	}
 
-	span:nth-child(even) {
-		margin-bottom:0;
-	}
 }

@@ -8,6 +8,8 @@ div.projects {
 
 	div.project {
 
+		margin-top: 25px;
+
 		text-align: center;
 
 		span.title {
@@ -45,6 +47,10 @@ div.projects {
 			width:35%;
 
 			display: inline-block;
+		}
+
+		&:last-child {
+			margin-bottom: 25px;
 		}
 
 	}

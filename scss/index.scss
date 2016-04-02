@@ -38,8 +38,11 @@ body {
 
 		background-color: $background-color;
 
+		text-align: center;
+
 		@import 'projects';
 		@import 'skills';
+		@import 'aboutme';
 	}
 	
 }

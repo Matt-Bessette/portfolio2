@@ -6,17 +6,28 @@
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400italic,400,700,700italic' rel='stylesheet' type='text/css'>
 	<link type="text/css" rel="stylesheet" href="/css/normalize.css">
 	<link type="text/css" rel="stylesheet" href="/css/index.css">
+	<script src="/js/jQuery.min.js"></script>
+	<script>
+		/* Credit to http://stackoverflow.com/questions/4801655/how-to-go-to-a-specific-element-on-page */
+		(function($) {
+			$.fn.goTo = function() {
+				$('html, body').animate({
+					scrollTop: $(this).offset().top + 'px'
+				}, 'fast');
+				return this; // for chaining...
+			};
+		})(jQuery);
+	</script>
 </head>
 <body>
 	<div class="above">
 		<div class="nav">
 			<span class="title">MatthewBessette.me</span>
 			<div class="list">
-				<span id="projects">Projects</span>
-				<span id="skills">Skills</span>
-				<span id="aboutme">About Me</span>
-				<span id="othersites">Other Sites</span>
-				<span id="contact">Contact</span>
+				<span id="projects" onclick="$('div.projects').goTo();">Projects</span>
+				<span id="skills" onclick="$('div.skills').goTo();">Skills</span>
+				<span id="aboutme" onclick="$('div.aboutme').goTo();">About Me</span>
+				<span id="contact" onclick="$('div.contact').goTo();">Contact</span>
 			</div>	
 		</div>
 	</div>
@@ -46,7 +57,7 @@
 			<span>Full-Stack Web Development:</span><span> Apache2, HTML5, CSS3, SCSS, PHP5, JavaScript, jQuery, Backbone.js, React.js, RESTful API, JSON</span>
 			<span>Database design:</span><span> MySQL, CouchDB, Relational Design</span>
 			<span>Security:</span><span> SQL Injection, XSS Injection</span>
-			<span>General IT:</span><span> Ubuntu Linux, CentOS Linux, Windows, MacOS</span>
+			<span>General IT:</span><span> Ubuntu Linux, CentOS Linux, Windows, MacOS, SSH, SSL</span>
 			<span>Project Management:</span><span> Git, Github, VirtualBox</span>
 			<span>Other languages:</span><span> Java, Python, Go</span>
 		</div>
@@ -59,9 +70,21 @@
 		</div>
 
 		<hr>
+
+		<div class="contact">
+			<span class="title">Contact</span>
+			<span>
+				For all inqueries, feel free to contact me at email address.<br/>Please bear with the captcha, it helps prevent spam from internet scrapers.<br/><br/>
+				<a href="http://www.google.com/recaptcha/mailhide/d?k=01Kuyl9sVlRYl6rE6hKr-iJg==&amp;c=UkH77jZ6cL6fnoljHPt-uwnZ66_NxoTCArDNhW0ZpTE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501Kuyl9sVlRYl6rE6hKr-iJg\75\75\46c\75UkH77jZ6cL6fnoljHPt-uwnZ66_NxoTCArDNhW0ZpTE\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">b...</a>@gmail.com
+			</span>
+		</div>
+
+		<hr>
 	
 		<div class="closing">
 			<span><a href="https://pixabay.com/en/glacier-argentina-patagonia-530050/">Image Credit</a></span>
+			<span><a href="https://github.com/Matt-Bessette">GitHub</a></span>
+			<span><a href="https://www.linkedin.com/in/mattbessette94">LinkedIn</a></span>
 		</div>
 	</div>
 </body>

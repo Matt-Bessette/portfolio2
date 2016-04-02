@@ -6,13 +6,14 @@ $background-color:white;
 
 body {
 
+	font-family: 'Titillium Web', serif;
+
 	div.above {
 
-		width:100%;
-		height:30%;
-
 		@import 'nav';
-		background-image: url('/img/northern-lights-1149130_1920.jpg');
+		background-image: url('/img/glacier-530050_1920.jpg');
+
+		padding-bottom: 150px;
 	}
 
 	div.below {
